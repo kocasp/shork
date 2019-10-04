@@ -1,5 +1,5 @@
 class CrawlService
-  def initialize(crawler_name)
+  def initialize(crawler_name = 'default')
     @crawler_name = crawler_name
     get_crawler
   end
