@@ -16,4 +16,9 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require imagesloaded.pkgd.min
+//= require isotope.pkgd.min
+//= require jquery.appear.min
+//= require popper.min
+//= require main.js
 //= require_tree .

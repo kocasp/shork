@@ -10,8 +10,27 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require LineIcons
+ *= require default
+ *= require style
  *= require_tree .
  *= require_self
  */
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
+
+.header-image{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-image {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  max-width: 900px;
+}
+
+.top-logo{
+  max-width: 75px;
+}
