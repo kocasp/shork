@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image: url(asset_path("isometric_background.png"));
 }
 
 .main-image {
@@ -33,4 +34,12 @@
 
 .top-logo{
   max-width: 75px;
+}
+
+.single-features .features-title .example-link{
+  color: #54D3DC;
+}
+
+.single-features:hover .example-link{
+  color: #fff;
 }
