@@ -7,13 +7,13 @@ class CrawlService
   end
 
   def call(params)
-    begin
+    # begin
       @crawler.call(params)
-    rescue
-      # place this back after adding custom crawlers
-      # return "Crawler Error. Check Syntax!"
-      return "Page unavailable or element with given selector not found."
-    end
+    # rescue
+    #   # place this back after adding custom crawlers
+    #   # return "Crawler Error. Check Syntax!"
+    #   return "Page unavailable or element with given selector not found."
+    # end
   end
 
   def get_crawler
