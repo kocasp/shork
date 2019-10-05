@@ -7,11 +7,11 @@
 						<a class="navbar-brand" href="index.html">
 						<%= image_tag('logo_white.png', class: 'top-logo')%>
 						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFive" aria-controls="navbarFive" aria-expanded="false" aria-label="Toggle navigation">
+						<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFive" aria-controls="navbarFive" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="toggler-icon"></span>
 						<span class="toggler-icon"></span>
 						<span class="toggler-icon"></span>
-						</button>
+						</button> -->
 						<div class="collapse navbar-collapse sub-menu-bar" id="navbarFive">
 							<!-- <ul class="navbar-nav ml-auto">
 								<li class="nav-item active">
@@ -54,15 +54,17 @@
 			<div class="col-lg-6">
 				<div class="section-title text-center pb-50">
 					<h3 class="title">How does Shork work?</h3>
-					<p class="text">Lorem ipsum dolor sit amet...</p>
+					<p class="text">Straight and simple...</p>
 				</div>
 			</div>
 		</div>
 		<div class="row no-gutters justify-content-center">
 			<div class="col-md-12">
 				<div class="single-features text-center">
-					<h3 class="features-title"><a href="#">Form placeholder</a></h3>
-					<p class="text">This form will contain form for site address and css selector</p>
+					<h3 class="features-title"><a href="#">Just pass parameters to Shork.me</a></h3>
+					<p class="text">'p' should be the parameter with page address (including http://) and 's' should be a parameter containing css selector</p>
+          <p class="text">Example link with params:</p>
+          <a class="text" href="http://shork.me?p=http://example.com&s=body > div > h1" target="_blank">http://shork.me?p=http://example.com&s=body > div > h1</a>
 				</div>
 			</div>
 		</div>

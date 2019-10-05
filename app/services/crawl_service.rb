@@ -10,7 +10,9 @@ class CrawlService
     begin
       @crawler.call(params)
     rescue
-      return "Crawler Error. Check Syntax!"
+      # place this back after adding custom crawlers
+      # return "Crawler Error. Check Syntax!"
+      return "Page unavailable or element with given selector not found."
     end
   end
 

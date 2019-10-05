@@ -13,6 +13,3 @@ class Crawlers::Default
     @browser.first(params[:s]).text
   end
 end
-
-# 'body > header > div.navbar-area.navbar-transparent > div > div > div'
-# 'http://shork.me'
