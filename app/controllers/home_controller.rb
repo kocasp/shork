@@ -13,8 +13,8 @@ class HomeController < ApplicationController
   def basic_crawl_params
     return nil if params[:p].blank? || params[:s].blank?
     {
-      page: params[:p],
-      selector: params[:s]
+      p: params[:p],
+      s: params[:s]
     }
   end
 

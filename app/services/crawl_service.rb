@@ -1,3 +1,5 @@
+require 'capybara/poltergeist'
+
 class CrawlService
   def initialize(crawler_name = 'default')
     @crawler_name = crawler_name
