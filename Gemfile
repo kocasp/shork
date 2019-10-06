@@ -42,6 +42,7 @@ gem 'jquery-rails'
 gem 'capybara'
 gem 'poltergeist'
 gem "font-awesome-rails"
+gem 'pry', '~> 0.12.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
