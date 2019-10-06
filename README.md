@@ -11,6 +11,7 @@ Shork receives 2 GET params. 'p' is an URL of a page that is going to be scraped
 There is a form available on landing page that lets you generate a link. It takes care of encoding special characters before passing it as url param.
 
 ### Use cases
+#### Quick example
 Lets say that we just want to read loud the header of example.com domain
 1. go to Shork.me and enter 'example.com' as URL and 'h1' as selector
 2. copy generated address
