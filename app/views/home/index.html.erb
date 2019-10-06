@@ -61,13 +61,62 @@
 		<div class="row no-gutters justify-content-center">
 			<div class="col-md-12">
 				<div class="single-features text-center">
-					<h3 class="features-title"><a href="#">Just pass parameters to Shork.me</a></h3>
-					<p class="text">'p' should be the parameter with page address (including http://) and 's' should be a parameter containing css selector</p>
-          <p class="text">Example link with params:</p>
-          <h3 class="features-title"><a class="text example-link" href="http://shork.me?p=http://example.com&s=body > div > h1" target="_blank">http://shork.me?p=http://example.com&s=body > div > h1</a></h1>
+					<h3 class="features-title"><a href="#">Enter parameters to generate a Shork.me link</a></h3>
+					<p class="text">'p' param will be the page address and 's' will be a css selector</p>
+			    <input class="form-control text" id="shork-url" aria-describedby="emailHelp" placeholder="Enter page URL" style="color: black">
+			    <input class="form-control text" id="shork-selector" placeholder="Enter CSS selector" style="color: black">
+					<p class="text">Generated link:</p>
+					<input class="form-control text generated-link" id="shork-generated" style="color: black">
+					<!-- <h3 class="features-title"><a class="text example-link" id="shork-generated" href="http://shork.me?p=http://example.com&s=body > div > h1" target="_blank"></a></h1> -->
+				  <!-- <button type="submit" class="btn btn-primary text" style="color: white">Submit</button> -->
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center" style="margin-top: 100px">
+			<div class="col-lg-6">
+				<div class="section-title text-center pb-50">
+					<h3 class="title">Example use case</h3>
+					<p class="text">Lets say you want to make a shortcut that sends a message to your friend about current main news on CNN.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<section id="about-2" class="about-area d-lg-flex align-items-center">
+	<div class="container">
+		<div class="row justify-content-end">
+			<div class="col-lg-6">
+				<div class="about-content">
+					<h5 class="sub-title">Get the address and the content selector</h5>
+					<p class="text">1. Open the page with the content of your interest. Current url will be your <b>address</b></p>
+					<p class="text">2. Open Chrome Dev Tools and select element with your content. Then right click on highlighted code part and select COPY > COPY SELECTOR. The selector is now in your clipboard.</p>
+					<p class="text">3. Paste the address and selector to the form above to generate Shork link, or create it manually.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-image d-flex align-items-center">
+		<div class="image">
+			<img src="assets/images/about2.svg" alt="about">
+		</div>
+	</div>
+</section>
 <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+<script type="text/javascript">
+	$( "#shork-url" ).keyup(function() { updateUrl() });
+	$( "#shork-selector" ).keyup(function() { updateUrl() });
+
+	function updateUrl() {
+		let url = encodeURIComponent($( "#shork-url" ).val());
+		if (url.toLowerCase().substring(0, 4) != 'http'){
+			url = 'http://'+url
+		};
+
+		const selector = encodeURIComponent($( "#shork-selector" ).val());
+		const generated = 'http://shork.me/?p='+url+'&s='+selector
+		if ($( "#shork-url" ).val() != '' && $( "#shork-selector" ).val() != ''){
+		  $( "#shork-generated" ).val(generated)
+		}
+	}
+</script>
