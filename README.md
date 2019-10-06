@@ -22,7 +22,7 @@ Lets say that we just want to read loud the header of example.com domain
 5. press 'add action' > 'web' > 'get contents of Url'
 6. paste previously copied address to URL field
 7. press '+' at the bottom to add next module
-8. select > 'documents' > 'speak text'. 'Contents of URL' should be automatically set as reference.
+8. select 'documents' > 'speak text'. 'Contents of URL' should be automatically set as reference.
 9. press 'play' button at the bottom of the screen to see how things work. It should read 'Example domain'. You can check that this is what example.com header says.
 10. you can now title and save the shortcut and use it with Siri.
 
