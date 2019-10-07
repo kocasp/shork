@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   private
 
   def crawl_params
-    params.except("controller", "action", "crawler_code")
+    params.except("controller", "action", "crawler_code", "fbclid")
   end
 
   def basic_crawl_params
